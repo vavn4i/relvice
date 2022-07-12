@@ -1,0 +1,134 @@
+.about-us {
+  background: #252b42;
+  &__header {
+    padding-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title {
+    margin-bottom: 15px;
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+  }
+  &__subtitle {
+    width: 511px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+  }
+  &__informations {
+    padding-bottom: 136px;
+    display: flex;
+    align-items: center;
+  }
+  &__img {
+    margin-right: 120px;
+  }
+}
+.confidence-title {
+  margin-bottom: 10px;
+  font-size: 40px;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+}
+.confidence-subtitle {
+  margin-bottom: 50px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+}
+.advantage {
+  margin-bottom: 30px;
+  display: flex;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &-icon {
+    margin-right: 20px;
+  }
+  &-text {
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #ffffff;
+    width: 277px;
+  }
+  &-description {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+  }
+}
+
+@media screen and (max-width: 1363px) {
+  .about-us {
+    &__img {
+      margin-right: 50px;
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .about-us {
+    &__img {
+      width: 410px;
+    }
+  }
+  .about-us.container {
+    padding: 0 50px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .about-us__informations {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .about-us__img {
+    margin-right: 0;
+    align-items: flex-start;
+  }
+}
+@media screen and (max-width: 864px) {
+  .about-us__img {
+    width: 100%;
+  }
+  .about-us__subtitle {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 412px) {
+  .about-us {
+    &__title {
+    }
+    &__subtitle {
+      text-align: center;
+      width: 225px;
+    }
+    &__img {
+    }
+  }
+  .confidence-title {
+    width: initial;
+    max-width: 330px;
+  }
+  .confidence-subtitle {
+    width: initial;
+    max-width: initial;
+  }
+  .advantage-text{
+    max-width: 277px;
+    width: initial;
+  }
+}

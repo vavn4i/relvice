@@ -1,0 +1,115 @@
+.advice {
+  background: #252b42;
+  &-header {
+    padding-top: 100px;
+    margin-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &-title {
+    margin-bottom: 10px;
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+  }
+  &-subtitle {
+    width: 470px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+  }
+  &-list {
+    display: flex;
+    justify-content: center;
+
+    padding-bottom: 80px;
+    &__card {
+      margin-right: 40px;
+      width: 230px;
+      background: #ffffff;
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &-title {
+        padding: 30px 0 0 29px;
+        margin-bottom: 15px;
+
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+        color: #252b42;
+      }
+      &-subtitle {
+        padding-left: 30px;
+        margin-bottom: 30px;
+
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        color: #737373;
+      }
+      &-img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1363px) {
+  .advice.container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .advice {
+    &-list {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &__card {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 50%;
+        &:last-child {
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 864px) {
+  .advice-subtitle {
+    width: 100%;
+  }
+  .advice-list__card-title {
+    padding-left: 15px;
+  }
+  .advice-list__card-subtitle {
+    padding-left: 15px;
+  }
+}
+@media screen and (max-width: 412px) {
+  .advice {
+    &-header {
+    }
+    &-title {
+      width: 180px;
+      text-align: center;
+      font-size: 40px;
+      line-height: 57px;
+    }
+    &-subtitle{
+      text-align: center;
+      width: 225px;
+    }
+  }
+}

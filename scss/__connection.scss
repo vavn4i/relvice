@@ -1,0 +1,134 @@
+.connection {
+  background: #252b42;
+  &-header {
+    padding-top: 100px;
+    margin-bottom: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__title {
+      margin-bottom: 10px;
+      font-size: 40px;
+      line-height: 57px;
+      letter-spacing: 0.2px;
+      color: #ffffff;
+    }
+    &__subtitle {
+      width: 470px;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      letter-spacing: 0.2px;
+      color: #ffffff;
+    }
+  }
+  &-informations {
+    padding-bottom: 178px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__card {
+      padding: 50px 40px;
+      width: 328px;
+      height: 333px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #ffffff;
+      cursor: pointer;
+      &:not(:hover) {
+          transition: 1s;
+      }
+      &:hover{
+          background: #0D5C63;
+          transform: scale(1.2);
+          transition: 1s;
+          
+          .connection-card__mail{
+              color: white;
+          }
+          .connection-card__text{
+              color: white;
+          }
+          .connection-card__button{
+              color: white;
+              border: 1px solid white;
+          }
+      }
+    }
+  }
+  &-card {
+    &__img {
+      margin-bottom: 15px;
+      width: 72px;
+      height: 70px;
+    }
+    &__mail {
+      font-size: 14px;
+      line-height: 24px;
+      text-align: center;
+      letter-spacing: 0.2px;
+      color: #252b42;
+      cursor: pointer;
+    }
+    &__text {
+      margin: 15px 0;
+
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      letter-spacing: 0.1px;
+      color: #252b42;
+    }
+    &__button {
+        padding: 10px 20px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 24px;
+      text-align: center;
+      letter-spacing: 0.2px;
+      color: #ff7b47;
+      border: 1px solid #FF7B47;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen  and (max-width:1024px){
+    .connection.container{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+@media screen  and (max-width:864px){
+    .connection.container{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .connection-informations{
+        flex-direction: column;
+        &__card{
+            margin-bottom: 10px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+    .connection-header__subtitle{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 412px){
+  .connection-header__title{
+    font-size: 38px;
+  }
+ .connection-header__subtitle{
+   width: 264px;
+   text-align: center;
+ }
+}

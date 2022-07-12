@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-logo">
+        <img src="./images/logo.png" alt="Логотип" class="logo" />
+      </div>
+      <div class="header-right__wrap">
+        <ul class="header-list">
+          <li class="header-list__item">
+            <a href="#" class="header-list__item-link"> Home</a>
+          </li>
+          <li class="header-list__item">
+            <a href="#" class="header-list__item-link"> Product</a>
+          </li>
+          <li class="header-list__item">
+            <a href="#" class="header-list__item-link"> Pricing</a>
+          </li>
+          <li class="header-list__item">
+            <a href="#" class="header-list__item-link"> Contact</a>
+          </li>
+        </ul>
+        <button class="header-button__search">
+          <img src="./images/search.png" alt="Поиск" class="search" />
+        </button>
+        <button class="header-button__basket">
+          <img src="./images/basket.png" alt="Корзина" class="basket" />
+        </button>
+        <button class="header-button__menu" onclick="openBurger()">
+          <img src="./images/burger.png" alt="Бургер" class="burger" />
+        </button>
+      </div>
+      <ul class="menu-burger">
+        <li>Home</li>
+        <li>Product</li>
+        <li>Pricing</li>
+        <li>Contact</li>
+      </ul>
+    </header>
+    <section class="baner">
+      <img src="./images/baner.png" alt="Банер" class="baner-img" />
+      <img src="./images/backgroundMobile.png" alt=" Задний фон мобилка" class="baner-mobile">
+      <div class="baner-content">
+        <h1 class="baner-content__title">Finance and Consultancy Solution</h1>
+        <p class="baner-content__subtitle">
+          We know how large objects will act, but things on a small scale.
+        </p>
+        <div class="baner-content__button">
+          <button class="button-get">Get Quote Now</button>
+          <button class="button-learn">Learn More</button>
+        </div>
+      </div>
+
+      <ul class="baner-cards container">
+        <li class="card-informations">
+          <img
+            src="./images/settings.png"
+            alt=""
+            class="card-informations__img"
+          />
+          <img
+            src="./images/settingsWhite.png"
+            alt=""
+            class="card-informations__img--white"
+          />
+          <h3 class="card-informations__title">
+            Surface Transport & Logistics
+          </h3>
+          <p class="card-informations__subtitle">
+            We focus on ergonomics and meeting you where you work.
+          </p>
+        </li>
+        <li class="card-informations">
+          <img
+            src="./images/settings.png"
+            alt=""
+            class="card-informations__img"
+          />
+          <img
+            src="./images/settingsWhite.png"
+            alt=""
+            class="card-informations__img--white"
+          />
+          <h3 class="card-informations__title">Save money and time</h3>
+          <p class="card-informations__subtitle">
+            Just type what's on your mind and we'll get you there.
+          </p>
+        </li>
+        <li class="card-informations">
+          <img
+            src="./images/settings.png"
+            alt=""
+            class="card-informations__img"
+          />
+          <img
+            src="./images/settingsWhite.png"
+            alt=""
+            class="card-informations__img--white"
+          />
+          <h3 class="card-informations__title">Environmental Consulting</h3>
+          <p class="card-informations__subtitle">
+            the quick fox jumps over the lazy dog
+          </p>
+        </li>
+      </ul>
+    </section>
+    <section class="meaning container">
+      <div class="meaning-header">
+        <h2 class="meaning-title">Every Client Matters</h2>
+        <p class="meaning-subtitle">
+          Problems trying to resolve the conflict between the two major realms
+          of Classical physics: Newtonian mechanics
+        </p>
+      </div>
+      <ul class="meaning-list">
+        <li class="meaning-list__card">
+          <img
+            src="./images/users.png"
+            alt="Пользователи"
+            class="meaning-card__img"
+          />
+          <p class="meaning-card__count">972 +</p>
+          <p class="meaning-card__description">Business & Finance</p>
+        </li>
+        <li class="meaning-list__card">
+          <img
+            src="./images/travel.png"
+            alt="Путешествия"
+            class="meaning-card__img"
+          />
+          <p class="meaning-card__count">181 +</p>
+          <p class="meaning-card__description">Travel & Aviation</p>
+        </li>
+        <li class="meaning-list__card">
+          <img
+            src="./images/medal.png"
+            alt="Медаль"
+            class="meaning-card__img"
+          />
+          <p class="meaning-card__count">98%</p>
+          <p class="meaning-card__description">Consumer Products</p>
+        </li>
+        <li class="meaning-list__card">
+          <img
+            src="./images/briefcase.png"
+            alt="Портфель"
+            class="meaning-card__img"
+          />
+          <p class="meaning-card__count">746 +</p>
+          <p class="meaning-card__description">Environmental</p>
+        </li>
+      </ul>
+    </section>
+    <section class="advice container">
+      <div class="advice-header">
+        <h2 class="advice-title">Practice Advice</h2>
+        <p class="advice-subtitle">
+          Problems trying to resolve the conflict between the two major realms
+          of Classical physics: Newtonian mechanics
+        </p>
+      </div>
+      <ul class="advice-list">
+        <li class="advice-list__card">
+          <h5 class="advice-list__card-title">A single source of truth</h5>
+          <p class="advice-list__card-subtitle">
+            Newton thought that light was made up of particles, but then it was
+            discovered
+          </p>
+          <img
+            src="./images/source.png"
+            alt="Единый источник истины"
+            class="advice-list__card-img"
+          />
+        </li>
+        <li class="advice-list__card">
+          <h5 class="advice-list__card-title">Fastest way to organize</h5>
+          <p class="advice-list__card-subtitle">
+            “Quantum mechanics” is the description of the behaviour of matter
+          </p>
+          <img
+            src="./images/city.png"
+            alt="небоскреб"
+            class="advice-list__card-img"
+          />
+        </li>
+        <li class="advice-list__card">
+          <h5 class="advice-list__card-title">Fastest way to take action</h5>
+          <p class="advice-list__card-subtitle">
+            They describe a universe consisting of bodies moving
+          </p>
+          <img
+            src="./images/work.png"
+            alt="Работа"
+            class="advice-list__card-img"
+          />
+        </li>
+        <li class="advice-list__card">
+          <h5 class="advice-list__card-title">Work better together</h5>
+          <p class="advice-list__card-subtitle">
+            They finally obtained a consistent description of the behaviour
+          </p>
+          <img
+            src="./images/office.png"
+            alt="Офис"
+            class="advice-list__card-img"
+          />
+        </li>
+      </ul>
+    </section>
+    <section class="about-us container ">
+      <div class="about-us__header">
+        <h2 class="about-us__title">Who We Are</h2>
+        <p class="about-us__subtitle">
+          Problems trying to resolve the conflict between the two major realms
+          of Classical physics: Newtonian mechanics
+        </p>
+      </div>
+      <div class="about-us__informations">
+        <img src="./images/video.png" alt="Видео" class="about-us__img" />
+        <div class="about-us__informations-confidence">
+          <p class="confidence-title">Most trusted in our field</p>
+          <p class="confidence-subtitle">
+            Most calendars are designed for teams. Slate is designed for
+            freelancers who want a simple way to plan their schedule.
+          </p>
+          <div class="advantage">
+            <img
+              src="./images/people.svg"
+              alt="Общество"
+              class="advantage-icon"
+            />
+            <div class="text">
+              <p class="advantage-text">
+                the quick fox jumps over the lazy dog
+              </p>
+              <p class="advantage-description">
+                Things on a very small scale ...
+              </p>
+            </div>
+          </div>
+
+          <div class="advantage">
+            <img
+              src="./images/speed.svg"
+              alt="Скорость"
+              class="advantage-icon"
+            />
+            <div class="text">
+              <p class="advantage-text">
+                the quick fox jumps over the lazy dog
+              </p>
+              <p class="advantage-description">
+                Things on a very small scale ...
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sponsor container">
+      <ul class="sponsor-list">
+        <li class="sponsor-list__item">
+          <img src="./images/hooli.png" alt="" class="sponsor-list__item-img" />
+        </li>
+        <li class="sponsor-list__item">
+          <img src="./images/lya.png" alt="" class="sponsor-list__item-img" />
+        </li>
+        <li class="sponsor-list__item">
+          <img src="./images/sail.png" alt="" class="sponsor-list__item-img" />
+        </li>
+
+        <li class="sponsor-list__item">
+          <img
+            src="./images/stripe.png"
+            alt=""
+            class="sponsor-list__item-img"
+          />
+        </li>
+        >
+        <li class="sponsor-list__item">
+          <img src="./images/aws.png" alt="" class="sponsor-list__item-img" />
+        </li>
+        <li class="sponsor-list__item">
+          <img
+            src="./images/plaything.png"
+            alt=""
+            class="sponsor-list__item-img"
+          />
+        </li>
+      </ul>
+      <div class="subscribe">
+        <p class="subscribe-text">Subscribe For Latest Newsletter</p>
+        <form action="" class="subscribe-form">
+          <input
+            type="text"
+            class="subscribe-form__input"
+            placeholder="Your Email"
+          />
+          <button class="subscribe-form__button">Subscribe</button>
+        </form>
+      </div>
+    </section>
+    <section class="connection container">
+      <div class="connection-header">
+        <h2 class="connection-header__title">Get In Touch</h2>
+        <p class="connection-header__subtitle">
+          Problems trying to resolve the conflict between the two major realms
+          of Classical physics: Newtonian mechanics
+        </p>
+      </div>
+      <ul class="connection-informations">
+        <li class="connection-informations__card">
+          <img
+            src="./images/phoneOrange.png"
+            alt="Телефон"
+            class="connection-card__img"
+          />
+          <a href="" class="connection-card__mail">
+            georgia.young@example.com
+          </a>
+          <a href="" class="connection-card__mail"> georgia.young@ple.com </a>
+          <p class="connection-card__text">Get Support</p>
+          <button class="connection-card__button">Submit Request</button>
+        </li>
+        <li class="connection-informations__card">
+          <img
+            src="./images/telegramOrange.png"
+            alt="Местоположение"
+            class="connection-card__img"
+          />
+          <a href="" class="connection-card__mail">
+            georgia.young@example.com
+          </a>
+          <a href="" class="connection-card__mail"> georgia.young@ple.com </a>
+          <p class="connection-card__text">Get Support</p>
+          <button class="connection-card__button">Submit Request</button>
+        </li>
+        <li class="connection-informations__card">
+          <img
+            src="./images/telegramOrange.png"
+            alt="телеграмм"
+            class="connection-card__img"
+          />
+          <a href="" class="connection-card__mail">
+            georgia.young@example.com
+          </a>
+          <a href="" class="connection-card__mail"> georgia.young@ple.com </a>
+          <p class="connection-card__text">Get Support</p>
+          <button class="connection-card__button">Submit Request</button>
+        </li>
+      </ul>
+    </section>
+    <section class="contact container">
+      <div class="contact-block">
+        <div class="contact-block__left">
+          <h2 class="contact-block__left-title">
+            Consulting Agency For Your Business
+          </h2>
+          <p class="contact-block__left-subtitle">
+            the quick fox jumps over the lazy dog
+          </p>
+        </div>
+        <button class="contact-block__button">Contact Us</button>
+      </div>
+    </section>
+    <footer class="footer container">
+      <div class="footer-top">
+        <ul class="footer-top__list-informations">
+          <li class="footer-top__list-item">
+            <h5 class="top-informations__title">Company Info</h5>
+          </li>
+          <li class="footer-top__list-item">
+            <p class="top-informations__text">About Us</p>
+          </li>
+          <li class="footer-top__list-item">
+            <p class="top-informations__text">Carrier</p>
+          </li>
+          <li class="footer-top__list-item">
+            <p class="top-informations__text">We are hiring</p>
+          </li>
+          <li class="footer-top__list-item">
+            <p class="top-informations__text">Blog</p>
+          </li>
+        </ul>
+        <ul class="footer-top__list-informations">
+          <li class="footer-top__list-item">
+            <h5 class="top-informations__title">Legal</h5>
+          </li>
+          <li class="footer-top__list-item">
+            <p class="top-informations__text">About Us</p>
+          </li>
+          <li class="footer-top__list-item">
+            <p class="top-informations__text">Carrier</p>
+          </li>
+          <li class="footer-top__list-item">
+            <p class="top-informations__text">We are hiring</p>
+          </li>
+          <li class="footer-top__list-item">
+            <p class="top-informations__text">Blog</p>
+          </li>
+        </ul>
+        <ul class="footer-top__list-informations">
+          <li class="footer-top__list-item">
+            <h5 class="top-informations__title">Features</h5>
+          </li>
+          <li class="footer-top__list-item">
+            <p class="top-informations__text">Business Marketing</p>
+          </li>
+          <li class="footer-top__list-item">
+            <p class="top-informations__text">User Analytic</p>
+          </li>
+          <li class="footer-top__list-item">
+            <p class="top-informations__text">Live Chat</p>
+          </li>
+          <li class="footer-top__list-item">
+            <p class="top-informations__text">Unlimited Support</p>
+          </li>
+        </ul>
+        <ul class="footer-top__list-informations">
+          <li class="footer-top__list-item">
+            <h5 class="top-informations__title">Resources</h5>
+          </li>
+          <li class="footer-top__list-item">
+            <p class="top-informations__text">IOS & Android</p>
+          </li>
+          <li class="footer-top__list-item">
+            <p class="top-informations__text">Watch a Demo</p>
+          </li>
+          <li class="footer-top__list-item">
+            <p class="top-informations__text">Customers</p>
+          </li>
+          <li class="footer-top__list-item">
+            <p class="top-informations__text">API</p>
+          </li>
+        </ul>
+        <ul class="footer-top__list-informations">
+          <li class="footer-top__list-item">
+            <h5 class="top-informations__title">Get In Touch</h5>
+          </li>
+          <li class="footer-top__list-item footer-img__text">
+            <img src="./images/phoneFooter.svg" alt="телефон" class="top-informations__img" />
+            <p class="top-informations__text">(480) 555-0103</p>
+          </li>
+          <li class="footer-top__list-item footer-img__text">
+            <img src="./images/pointerFooter.svg" alt="Координаты" class="top-informations__img" />
+            <p class="top-informations__text">4517 Washington Ave. Manchester, Kentucky 39495</p>
+          </li>
+          <li class="footer-top__list-item footer-img__text">
+            <img src="./images/mailFooter.svg" alt="Почта" class="top-informations__img" />
+            <p class="top-informations__text">debra.holt@example.com</p>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-low container">
+        <p class="footer-low__text">Made With Love By Figmaland All Right Reserved </p>
+        <ul class="footer-low__list">
+          <li class="footer-low__list-item">
+            <img src="./images/fbFooterLow.svg" alt="facebook" class="footer-low__img">
+          </li>
+          <li class="footer-low__list-item">
+            <img src="./images/instagramFooterLow.svg" alt="instagram" class="footer-low__img">
+          </li>
+          <li class="footer-low__list-item">
+            <img src="./images/twitterFooterLow.svg" alt="twitter" class="footer-low__img">
+          </li>
+          <li class="footer-low__list-item">
+            <img src="./images/youtubeFooterLow.svg" alt="youtube" class="footer-low__img">
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+  <script src="./script.js"></script>
+</html>

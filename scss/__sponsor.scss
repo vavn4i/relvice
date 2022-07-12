@@ -1,0 +1,122 @@
+.sponsor {
+  
+  background: #252b42;
+  &-list {
+    padding-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__item {
+      margin-right: 80px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+.subscribe {
+  padding: 30px 50px;
+  margin: 0 auto;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+
+  background: #17213c;
+  border-radius: 2px;
+  &-text {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: #ffffff;
+  }
+  &-form {
+      
+    border-radius: 5px;
+    background: #f9f9f9;
+    border: 1px solid #e6e6e6;
+    &__input {
+        padding: 15px 0 15px 20px;
+        width: 333px;
+        border: none;
+        outline: none;
+    }
+    &__button {
+        padding: 16px 23px;
+      background: #ff7b47;
+      border: 1px solid #e6e6e6;
+      box-sizing: border-box;
+      border-radius: 0px 5px 5px 0px;
+      font-size: 14px;
+      line-height: 28px;
+      text-align: center;
+      letter-spacing: 0.2px;
+      color: #ffffff;
+    }
+  }
+}
+@media screen and (max-width: 1363px) {
+  .subscribe-form__input{
+    width: 250px;
+  }
+}
+@media screen and (max-width: 1200px){
+.subscribe{
+  flex-direction: column;
+  &-text{
+    margin-bottom: 15px;
+  }
+}
+}
+@media screen and (max-width: 1024px){
+  .sponsor-list__item{
+    margin-right: 30px;
+  }
+}
+@media screen  and (max-width:864px){
+.sponsor.container{
+
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.sponsor-list{
+  flex-wrap: wrap;
+}
+.subscribe-form__button{
+  width: 100%;
+}
+}
+@media screen and (max-width: 412px){
+.sponsor.container{
+  padding-right: 0;
+  padding-left: 0;
+}
+
+  .sponsor-list{
+    flex-direction: column;
+    &__item{
+      margin-right: 0;
+      margin-bottom: 60px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+  .subscribe{
+    &-form{
+      width: initial;
+      max-width: 337px;
+      display: flex;
+      &__input{
+        width: initial;
+        max-width: 250px;
+      }
+      &-button{
+        width: initial;
+        max-width: 117px;
+      }
+    }
+    &-text{
+      text-align: center;
+    }
+  }
+}

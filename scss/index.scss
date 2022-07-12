@@ -1,0 +1,52 @@
+@import './_header';
+@import './_baner';
+@import './_meaning';
+@import './__advice.scss';
+@import './_about-us';
+@import './_sponsor';
+@import './_connection';
+@import './_contact';
+@import './_footer';
+
+
+button,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+body,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+* {
+  box-sizing: border-box;
+}
+ button {
+     border:none;
+     outline: none;
+     background: transparent;
+ }
+ a{
+   text-decoration: none;
+ }
+ 
+ .container {
+   padding-left:197px;
+   padding-right:197px;
+ }
+
+ .active {
+   display: flex;
+ }
+ .padding-baner{
+   top: 555px;
+ }
